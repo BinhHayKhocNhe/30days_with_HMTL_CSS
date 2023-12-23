@@ -17,7 +17,7 @@
     <!-- BEM -->
     <div class="app">
         <!-- Header -->
-        <header class="header">
+        <header class="row header">
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
@@ -290,7 +290,65 @@
 
         </header>
 
-        <div class="container"></div>
+        <div class="app__container">
+            <div class="grid padd10">
+                <div class="grid__row padd20">
+                    <div class="grid__column-2">
+                        <nav class="catelory">
+                            <h3 class="catelory_heading">
+                                <i class="fa-solid fa-list catelory_heading-icon"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="catelory-list">
+                                <li class="catelory-item catelory-item--active">
+                                    <a href="#" class="catelory-link">Trang điểm mặt</a>
+                                </li>
+                                <li class="catelory-item">
+                                    <a href="#" class="catelory-link">Trang điểm mắt</a>
+                                </li>
+                                <li class="catelory-item">
+                                    <a href="#" class="catelory-link">Trang điểm môi</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="btn home-filter__btn">Phổ biến</button>
+                            <button class="btn btn--primary home-filter__btn">Mới nhất</button>
+                            <button class="btn home-filter__btn">Bán chạy</button>
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="fa-solid fa-chevron-down select-input__icon"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá cao đến thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="fa-solid fa-chevron-left home-filter__icon"></i>
+                                    </a>
+                                    <a href="#" class="home-filter__page-btn">
+                                        <i class="fa-solid fa-chevron-right home-filter__icon"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer class="footer"></footer>
     </div>
     <!-- Layout modal -->

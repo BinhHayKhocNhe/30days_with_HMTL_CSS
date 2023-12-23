@@ -15,6 +15,18 @@
     padding: 0;
 }
 
+.mr {
+    margin-right: 20px;
+}
+
+.padd10 {
+    padding: 0px 10px;
+}
+
+.padd20 {
+    padding: 20px 0px;
+}
+
 html {
     /* trick */
     font-size: 62.5%;
@@ -23,8 +35,14 @@ html {
     box-sizing: border-box;
 }
 
+/* Responsive */
+.row {
+    float: left;
+    width: 100%;
+}
+
 .grid {
-    width: 1200px;
+    width: 1170px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -36,6 +54,20 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
 }
 
 /* Animation */
@@ -98,7 +130,7 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -122,4 +154,41 @@ html {
     height: 32px;
     font-size: 12px;
     padding: 0 5px;
+}
+
+/* selection */
+.select-input {
+    position: relative;
+    min-width: 200px;
+    height: 36px;
+    padding: 0 10px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.select-input:hover .select-input__list{
+    display: block;
+}
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 38px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    padding: 15px 16px;
+    display: none;
+}
+.select-input__link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-color); 
+    display: block;
+    padding: 4px 0;
+}
+.select-input__link:hover{
+    color: var(--primary-color);
 }
