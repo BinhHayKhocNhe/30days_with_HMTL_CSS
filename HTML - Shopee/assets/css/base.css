@@ -70,6 +70,12 @@ html {
     width: 83.3334%;
 }
 
+.grid__column-2-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+
 /* Animation */
 @keyframes fadeIn {
     from {
@@ -168,9 +174,11 @@ html {
     align-items: center;
     justify-content: space-between;
 }
-.select-input:hover .select-input__list{
+
+.select-input:hover .select-input__list {
     display: block;
 }
+
 .select-input__list {
     position: absolute;
     left: 0;
@@ -182,13 +190,15 @@ html {
     padding: 15px 16px;
     display: none;
 }
-.select-input__link{
+
+.select-input__link {
     text-decoration: none;
     font-size: 1.2rem;
-    color: var(--text-color); 
+    color: var(--text-color);
     display: block;
     padding: 4px 0;
 }
-.select-input__link:hover{
+
+.select-input__link:hover {
     color: var(--primary-color);
 }
