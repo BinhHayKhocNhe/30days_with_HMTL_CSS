@@ -1,0 +1,58 @@
+/* Reset CSS */
+* {
+    /* Emmet */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
+
+.mgr20 {
+    margin-right: 20px;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.padd10 {
+    padding: 0px 10px;
+}
+
+.padd20 {
+    padding: 20px 0px;
+}
+
+html {
+    /* trick */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}

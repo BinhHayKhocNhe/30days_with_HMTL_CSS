@@ -1,0 +1,94 @@
+#main {}
+
+#header {
+    height: 46px;
+    background-color: black;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+#nav li a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    line-height: 46px;
+    user-select: none;
+    padding: 0 24px;
+    display: block;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
+    color: var(--black-color);
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 140px;
+    background-color: var(--white-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    color: var(--black-color);
+    font-size: 1.1rem;
+    line-height: 35px;
+}
+
+.nav-arrow-down {
+    font-size: 1rem;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 20px;
+    display: flex;
+    height: 100%;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .search-icon {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    margin: auto;
+    /* hoặc dùng line height */
+}
+
+#slider {}
+
+#content {}
+
+#footer {}
