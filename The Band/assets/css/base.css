@@ -56,3 +56,7 @@ html {
     margin-left: -12px;
     margin-right: -12px;
 }
+/* fix float */
+.clear{
+    clear: both;
+}
