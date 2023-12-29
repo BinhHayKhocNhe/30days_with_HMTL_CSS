@@ -167,6 +167,16 @@
     width: calc(100% / 3);
     float: left;
     text-align: center;
+    transition: 0.3s;
+    padding: 20px 0;
+}
+
+#content .member-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: 0.1px solid #999;
+    border-radius: 2px;
 }
 
 #content .member-name {
@@ -219,6 +229,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.places-list {
+    /* Tricks margin âm để đều 2 bên */
+    margin: 32px -8px 48px;
+}
+
+.place-item {
+    float: left;
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.boximg {
+    overflow: hidden;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+    transform: scale(1.2) rotate(2deg);
+    cursor: pointer;
+}
+
+.place-body {
+    background-color: var(--white-color);
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.place-heading {
+    font-weight: 500;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+    line-height: 1.4;
+}
+
+.place-description {
+    margin-top: 15px;
+}
+
+.place-buy {
+    margin-top: 15px;
+    display: flex;
+}
+
+.place-btn-buy {
+    margin: 0 auto;
+    padding: 11px 15px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    text-decoration: none;
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+.place-btn-buy:hover {
+    color: var(--black-color);
+    background-color: #ccc;
 }
 
 #footer {}
