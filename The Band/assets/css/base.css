@@ -12,24 +12,40 @@
 }
 
 .row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
     float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
     width: 100%;
 }
 
-.mgr20 {
-    margin-right: 20px;
+.col-2 {
+    width: 50%;
 }
 
-.mgb20 {
-    margin-bottom: 20px;
+.col-3 {
+    width: calc(100% / 3);
 }
 
-.padd10 {
-    padding: 0px 10px;
+.mgt-8 {
+    margin-top: 8px !important;
 }
 
-.padd20 {
-    padding: 20px 0px;
+.mgt-16 {
+    margin-top: 16px !important;
 }
 
 html {
@@ -56,7 +72,8 @@ html {
     margin-left: -12px;
     margin-right: -12px;
 }
+
 /* fix float */
-.clear{
+.clear {
     clear: both;
 }
